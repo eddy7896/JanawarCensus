@@ -198,3 +198,13 @@ janawar-census/
 ├── docker-compose.yml       # Docker configuration
 └── README.md                # Project documentation
 ```
+
+## 🛠️ System Designed and Developed By
+
+- **Name**: Mohammad Faheem
+- **Email**: faheemfarooq3@gmail.com
+- **GitHub**: [eddy7896](https://github.com/eddy7896)
+
+---
+
+*This project is part of the Janawar Census initiative for wildlife conservation through technology.*
