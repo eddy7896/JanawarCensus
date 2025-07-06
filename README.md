@@ -80,6 +80,74 @@ The **Janawar Census** is an **AI-powered, acoustic-based bird monitoring system
 
 ---
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.9+
+- Node.js 18+
+- PostgreSQL 13+
+- Docker (optional, for containerized deployment)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/eddy7896/JanawarCensus.git
+   cd JanawarCensus
+   ```
+
+2. **Set up the backend**
+   ```bash
+   cd backend
+   python -m venv venv
+   source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
+3. **Set up the frontend**
+   ```bash
+   cd ../frontend-app
+   npm install
+   ```
+
+4. **Set up environment variables**
+   - Copy `.env.example` to `.env` in both `backend` and `frontend-app` directories
+   - Update the environment variables as needed
+
+## 🛠 Development
+
+### Running the backend
+```bash
+cd backend
+uvicorn app.main:app --reload
+```
+
+### Running the frontend
+```bash
+cd frontend-app
+npm run dev
+```
+
+### Running with Docker
+```bash
+docker-compose up --build
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## 📌 References
 
 1. Ramsar Sites Data - Wetlands of India
@@ -120,5 +188,5 @@ janawar-census/
 │
 ├── .gitignore               # Git ignore rules
 ├── docker-compose.yml       # Docker configuration
-└── README.md               # Project documentation
+└── README.md                # Project documentation
 ```
