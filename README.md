@@ -71,12 +71,20 @@ The **Janawar Census** is an **AI-powered, acoustic-based bird monitoring system
 
 ## 🔄 System Workflow
 
+![Alt text](images/system_workflow.png)
+
+### Edge Device Workflow
+
 1. **Recording**: Device records ambient bird sounds using microphone arrays.
 2. **Processing**: Audio analyzed using BirdNET for species identification.
 3. **Location Tagging**: GPS data attached to each acoustic event.
 4. **Data Upload**: Processed results uploaded via GSM/4G to central server.
-5. **Dashboard Visualization**: Real-time graphs, alerts, and trends are shown.
-6. **Endangered Species Alert**: Sends notifications on rare species detection.
+
+### Backend Workflow
+
+1. **Data Upload**: Processed results uploaded via GSM/4G to central server.
+2. **Dashboard Visualization**: Real-time graphs, alerts, and trends are shown.
+3. **Endangered Species Alert**: Sends notifications on rare species detection.
 
 ---
 
