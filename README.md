@@ -158,8 +158,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📌 References
 
-1. Ramsar Sites Data - Wetlands of India
-2. *Asian Waterbird Census in Jammu and Kashmir (2015–2021)* – Spatial attributes and trend analysis
+1. [Ramsar Sites Data - Wetlands of India](https://101reporters.com/article/environment/Birds_dwindle_in_Srinagars_Hokersar_wetland_birdwatching_community_concerned)
+2. [Asian Waterbird Census in Jammu and Kashmir (2015–2021)](https://www.researchgate.net/publication/359209512_Asian_Waterbird_Census_in_Jammu_and_Kashmir_2015-21_-_Spatial_attributes_and_trend_analysis)
+3. [BirdNET](https://birdnet.cornell.edu/)
+4. [BirdNET Analyzer](https://github.com/birdnet-team/BirdNET-Analyzer)
 
 ---
 
@@ -206,5 +208,3 @@ janawar-census/
 - **GitHub**: [eddy7896](https://github.com/eddy7896)
 
 ---
-
-*This project is part of the Janawar Census initiative for wildlife conservation through technology.*
