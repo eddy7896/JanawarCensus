@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from .endpoints import recordings, detections, species, devices, auth
+from .endpoints import recordings, detections, species, devices, auth, analysis
 
 api_router = APIRouter()
 
@@ -9,3 +9,4 @@ api_router.include_router(recordings.router, prefix="/recordings", tags=["Record
 api_router.include_router(detections.router, prefix="/detections", tags=["Detections"])
 api_router.include_router(species.router, prefix="/species", tags=["Species"])
 api_router.include_router(devices.router, prefix="/devices", tags=["Devices"])
+api_router.include_router(analysis.router, prefix="/analyses", tags=["Analysis"])

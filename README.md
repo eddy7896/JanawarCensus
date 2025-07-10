@@ -170,34 +170,43 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 janawar-census/
 ├── backend/                  # FastAPI backend application
-│   ├── app/                  # Main application code
-│   ├── birdnet/              # BirdNET integration and models
-│   ├── migrations/           # Database migrations
+│   ├── app/                  # Main application package
+│   │   ├── api/              # API endpoints and routes
+│   │   ├── core/             # Core functionality (config, security, etc.)
+│   │   ├── db/               # Database configuration and models
+│   │   ├── models/           # SQLAlchemy models
+│   │   ├── schemas/          # Pydantic models
+│   │   ├── services/         # Business logic and services
+│   │   └── main.py           # Application entry point
+│   ├── alembic/              # Database migrations
 │   └── requirements.txt      # Python dependencies
 │
-├── edge-device/              # Edge device implementation
-│   ├── audio_capture/        # Audio recording functionality
-│   ├── gps_tracking/         # GPS location services
-│   └── upload_scripts/       # Data upload utilities
+├── db/                       # Database initialization scripts
+│   └── init.sql              # Database schema and initial data
+│
+├── edge-device/              # Edge device implementation (Raspberry Pi)
+│   ├── audio/                # Audio recording and processing
+│   ├── gps/                  # GPS tracking functionality
+│   ├── upload/               # Data upload scripts
+│   └── requirements.txt      # Python dependencies for edge device
 │
 ├── frontend-app/             # Next.js frontend application
 │   ├── app/                  # App router pages and layouts
 │   ├── components/           # Reusable UI components
-│   ├── contexts/             # React contexts
 │   ├── lib/                  # Utilities and services
-│   └── public/               # Static assets
+│   ├── public/               # Static assets
+│   └── package.json          # Frontend dependencies
 │
-├── docs/                     # Project documentation
-│   ├── api/                  # API documentation
-│   ├── deployment/           # Deployment guides
-│   └── hardware/             # Hardware specifications
+├── images/                   # Project images and diagrams
+│   └── system_workflow.png   # System architecture diagram
 │
-├── scripts/                  # Development and setup scripts
-│   ├── database/             # Database management scripts
-│   └── setup/                # Environment setup scripts
+├── scripts/                  # Development and utility scripts
+│   └── database/             # Database management scripts
 │
+├── .env.example              # Example environment variables
 ├── .gitignore               # Git ignore rules
-├── docker-compose.yml       # Docker configuration
+├── docker-compose.yml        # Docker Compose configuration
+└── README.md                # Project documentation
 └── README.md                # Project documentation
 ```
 

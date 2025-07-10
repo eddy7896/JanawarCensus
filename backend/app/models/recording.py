@@ -38,6 +38,12 @@ class Recording(BaseModel):
     
     # Relationships
     detections = relationship("Detection", back_populates="recording", cascade="all, delete-orphan")
+    analyses = relationship("Analysis", back_populates="recording", cascade="all, delete-orphan")
+    
+    # Analysis status
+    analysis_status = Column(String(20), default="pending", nullable=False)  # pending, processing, completed, failed
+    analyzed_at = Column(DateTime, nullable=True)
+    analysis_error = Column(String, nullable=True)
     
     def __repr__(self):
         return f"<Recording {self.file_name} ({self.status})>"
